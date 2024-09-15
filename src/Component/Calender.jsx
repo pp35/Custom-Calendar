@@ -24,7 +24,7 @@ const Calendar = () => {
   const [currentMonth, setCurrentMonth] = useState(new Date());
 
   const isHoliday = (day) => holidays.find((holiday) => isSameDay(holiday.date, day));
-  const isWeekend = (day) => [0, 6].includes(day.getDay()); // Sunday=0, Saturday=6
+  const isWeekend = (day) => [0, 6].includes(day.getDay()); 
   const isCurrentDay = (day) => isSameDay(day, new Date());
 
   const dayStatusClass = (day) => {

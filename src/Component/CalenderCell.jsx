@@ -3,7 +3,7 @@ import { format } from "date-fns";
 import { Tooltip } from "react-tooltip";
 
 const CalendarCell = ({ day, dayStatusClass, setSelectedDate }) => {
-  const holiday = dayStatusClass(day).includes('tooltip') ? "Holiday" : ""; // Just for demo
+  const holiday = dayStatusClass(day).includes('tooltip') ? "Holiday" : "";
 
   return (
     <div
